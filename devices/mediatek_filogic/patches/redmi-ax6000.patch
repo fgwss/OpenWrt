@@ -42,7 +42,7 @@
 
 --- a/target/linux/mediatek/image/filogic.mk
 +++ b/target/linux/mediatek/image/filogic.mk
-@@ -125,3 +125,18 @@ define Device/mediatek_mt7986b-rfb
+@@ -125,3 +125,17 @@ define Device/mediatek_mt7986b-rfb
    IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
  endef
  TARGET_DEVICES += mediatek_mt7986b-rfb
@@ -57,7 +57,6 @@
 +  BLOCKSIZE := 128k
 +  PAGESIZE := 2048
 +  KERNEL_IN_UBI := 1
-+  KERNEL_SIZE := 4096k
 +  IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
 +endef
 +TARGET_DEVICES += xiaomi_redmi-router-ax6000
